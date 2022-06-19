@@ -1,0 +1,9 @@
+export const STARTED_GAME = "STARTED_GAME";
+export const ENDED_GAME = "ENDED_GAME";
+export const ADD_PLAYER = "ADD_PLAYER";
+export const DELETE_PLAYER = "DELETE_PLAYER";
+export const WAITING_PLAYERS = "WAITING_PLAYERS";
+export const JOINED_GAME = "JOINED_GAME";
+export const LEAVE_GAME = "LEAVE_GAME";
+export const CHANGED_TURN = "CHANGED_TURN";
+export const CHANGED_DASHBOARD = "CHANGED_DASHBOARD";

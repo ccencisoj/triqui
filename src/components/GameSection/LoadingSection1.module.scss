@@ -1,0 +1,42 @@
+.loading_section {
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  align-items: center;
+  justify-content: center;
+  //hidden
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(50px);
+
+  .column {
+    gap: 12px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+  transition: all 300ms 300ms;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(50px);
+  transition: all 300ms 3000ms;
+}
+
+.hidden_without_delay {
+  transition-delay: 0s;
+}

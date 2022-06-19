@@ -1,0 +1,33 @@
+.dashboard {
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  //hidden
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: all 300ms;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 300ms;
+}
+
+@media Only screen and (max-width: 640px) {
+  .dashboard {
+    width: 350px;
+  }
+}
+
+@media Only screen and (max-width: 450px) {
+  .dashboard {
+    width: 100%;
+  }
+}

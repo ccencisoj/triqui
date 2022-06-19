@@ -1,0 +1,31 @@
+.parallax_item {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  position: absolute;
+  transition: all 100ms;
+  animation: a_v1 calc(1s * var(--at)) ease 0s infinite alternate;
+}
+
+@keyframes a_v1 {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(calc(10px * var(--ay)));
+  }
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(calc(50px * var(--ay)));
+  transition: all 300ms;
+}
+
+.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+  transition: all 300ms;
+}

@@ -1,0 +1,11 @@
+.player_list {
+  gap: 12px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.row_direction {
+  gap: 24px;
+  flex-direction: row;
+}

@@ -1,0 +1,87 @@
+.button {
+  --color: #fff;
+  gap: 4px;
+  height: 64px;
+  display: flex;
+  padding: 0px 24px;
+  border-radius: 5px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  .label {
+    font-size: 14px;
+    color: var(--color);
+    font-weight: 600;
+  }
+
+  .icon {
+    width: 24px;
+    height: 24px;
+    color: var(--color);
+  }
+}
+
+.primary_color {
+  background-color: var(--primary-color);
+}
+
+.game_theme {
+  padding: 0px 120px;
+  border: 4px #0003 solid;
+  background-color: var(--primary-color);
+}
+
+.game_theme::before {
+  content: "";
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  position: absolute;
+  pointer-events: none;
+  box-sizing: border-box;
+  background: linear-gradient(to Top,transparent, #fff6);
+}
+
+.game_theme:hover:before {
+  background: linear-gradient(to Top,transparent, #fff5);
+} 
+
+.game_theme:active:before {
+  background: linear-gradient(to Top, #fff3, transparent);
+}
+
+.silver_theme {
+  --color: #ccc;
+  height: max-content;
+  padding: 12px 24px;
+}
+
+.silver_theme:hover {
+  --color: #000;
+  background-color: #e9e9ff;
+}
+
+.silver_theme:active {
+  background-color: #e1e1ff;
+}
+
+.light_theme {
+  --color: #999;
+  padding: 0px 24px;
+  background-color: #f1f1ff;
+}
+
+.light_theme:hover {
+  background-color: #e9e9ff;
+}
+
+.light_theme:active {
+  background-color: #e5e5ff;
+}
+
+.expand {
+  width: 100%;
+}

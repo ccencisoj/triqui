@@ -1,0 +1,39 @@
+.loading {
+  gap: 12px;
+  display: flex;
+  flex-direction: row;
+
+  .circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    transform: rotateZ(0deg);
+    border: 4px var(--primary-color) solid;
+    border-top: 4px transparent solid;
+    animation: a_c1 800ms linear 0s infinite forwards;
+
+    @keyframes a_c1 {
+      to {
+        transform: rotateZ(360deg);
+      }
+    }
+  }
+
+  .label {
+    font-size: 24px;
+    color: var(--primary-color);
+  }
+}
+
+@media Only screen and (max-width: 450px) {
+  .loading {
+    .circle {
+      width: 20px;
+      height: 20px;
+    }
+    
+    .label {
+      font-size: 18px;
+    }
+  }
+}

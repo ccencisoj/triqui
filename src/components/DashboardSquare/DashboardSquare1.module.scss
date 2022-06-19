@@ -1,0 +1,25 @@
+.dashboard_square {
+  --border-width: 10px;
+  width: 33%;
+  display: flex;
+  aspect-ratio: 1/1;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.border_top {
+  border-top: var(--border-width) #000 solid;
+}
+
+.border_bottom {
+  border-bottom: var(--border-width) #000 solid;
+}
+
+.border_right {
+  border-right: var(--border-width) #000 solid;
+}
+
+.border_left {
+  border-left: var(--border-width) #000 solid;
+}
