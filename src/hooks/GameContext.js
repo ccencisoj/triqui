@@ -5,6 +5,7 @@ import io from 'socket.io-client';
 const GameContext = React.createContext({});
 
 const socket = io(process.env.SOCKET_URL);
+console.log(process.env.SOCKET_URL);
 
 const GameProvider = ({children})=> { 
   const initialState = {
