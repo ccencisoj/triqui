@@ -5,7 +5,7 @@ import io from 'socket.io-client';
 const GameContext = React.createContext({});
 
 // const socket = io(process.env.SOCKET_URL, {secure: true});
-const socker = {on: ()=> 1};
+const socket = {on: ()=> 1};
 
 const GameProvider = ({children})=> { 
   const initialState = {
