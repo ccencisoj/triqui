@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 import { GameProvider } from 'hooks/GameContext';
 import GameLayout1 from 'components/Layout/GameLayout1';
 
