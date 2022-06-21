@@ -1,5 +1,5 @@
 module.exports = {
   env: {
-    SOCKET_URL: "https://54.94.51.150:443"
+    SOCKET_URL: "https://LB-triqui-server-229537727.sa-east-1.elb.amazonaws.com"
   }
 }
